@@ -1,6 +1,6 @@
-FROM jamesdbloom/docker-java7-maven
+FROM maven:3.2-jdk-7-onbuild
 ADD . /opt/app
 WORKDIR /opt/app
 RUN mvn clean install
-COMMAND java -cp target/classes:target/dependency/* Main
+CMD java -cp target/classes:target/dependency/* Main
 EXPOSE 8080
