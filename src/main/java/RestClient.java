@@ -1,4 +1,4 @@
-import com.cisco.example.Hello;
+import com.cisco.example.ExampleDomain;
 import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.ClientResponse;
 import com.sun.jersey.api.client.WebResource;
@@ -13,7 +13,7 @@ public class RestClient {
                     + response.getStatus());
         }
         //String output = response.getEntity(String.class);
-        Hello hello = response.getEntity(Hello.class);	//Get the object from the response
+        ExampleDomain hello = response.getEntity(ExampleDomain.class);	//Get the object from the response
         System.out.println("Output client .... \n");
         System.out.println(hello.say);
     }

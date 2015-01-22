@@ -8,7 +8,7 @@ import javax.ws.rs.Produces;
 public class ExampleResource {
     @GET
     @Produces("application/json")
-    public Hello getEmployee() {
-        return new Hello("Hello");
+    public ExampleDomain getEmployee() {
+        return new ExampleDomain("Hello");
     }
 }

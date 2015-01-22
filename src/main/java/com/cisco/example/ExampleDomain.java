@@ -3,13 +3,13 @@ package com.cisco.example;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
-public class Hello {
+public class ExampleDomain {
     public String say;
 
-    public Hello() {
+    public ExampleDomain() {
     }
 
-    public Hello(String variable) {
+    public ExampleDomain(String variable) {
         this.say = variable;
     }
 }
